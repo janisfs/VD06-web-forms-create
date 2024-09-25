@@ -1,6 +1,6 @@
-def main90:
-    pass
+from flask import Flask
 
+app = Flask(__name__)
+app.config['secret_key'] = 'you-will-never-guess'
 
-if __main__ ='__main__':
-    main()
+from app import routes
